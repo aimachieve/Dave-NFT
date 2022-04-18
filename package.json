@@ -1,7 +1,7 @@
 {
-  "name": "real-florida",
+  "name": "daves-nft",
   "version": "1.0.0",
-  "description": "Showing Real Florida Landscapes",
+  "description": " ",
   "main": "server.js",
   "scripts": {
     "start": "node server",
