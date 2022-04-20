@@ -46,7 +46,7 @@ export default function InputInfo() {
   const [status, setStatus] = useState('Uploading Image To Pinata')
   const [disable, setDisable] = useState(false)
   const [metaData, setMetaData] = useState({
-    'network': 'eth',
+    'network': 'bsc',
     'image': '',
     'name': '',
     'description': '',
@@ -272,7 +272,7 @@ export default function InputInfo() {
                       value={metaData.network}
                       onChange={onMetaDataChange}
                     >
-                      {/* <MenuItem value="bsc">
+                      <MenuItem value="bsc">
                         <Stack
                           direction={'row'}
                           justifyContent="center"
@@ -281,7 +281,7 @@ export default function InputInfo() {
                           <img src="/assets/create/bsc-icon.png" alt="bsc-icon" style={{ height: 'auto', width: '20px' }} />
                           <Typography>Binance Smart Chain</Typography>
                         </Stack>
-                      </MenuItem> */}
+                      </MenuItem>
                       <MenuItem value="eth">
                         <Stack direction={'row'} justifyContent="center" alignItems="center" spacing={2}>
                           <img src="/assets/create/eth-icon.png" alt="eth-icon" style={{ height: '20px', width: '20px' }} />
@@ -309,7 +309,7 @@ export default function InputInfo() {
                       value={metaData.description}
                       onChange={onMetaDataChange}
                     />
-                    {/* <TextField
+                    <TextField
                       inputProps={{ sx: { color: 'white' } }}
                       label="Tags"
                       helperText='* Add tags to help the item get discovered on the explore and search page. You may add up to 10 tags. Add up to 10 tags.'
@@ -355,8 +355,8 @@ export default function InputInfo() {
                         onChange={onMetaDataChange}
                         inputProps={{ 'aria-label': 'controlled' }}
                       />
-                    </Stack> */}
-                    {/* <Stack
+                    </Stack>
+                    <Stack
                       spacing={2}
                       sx={{
                         // display: !metaData.sale ? 'none' : ''
@@ -374,7 +374,7 @@ export default function InputInfo() {
                           <FormControlLabel value="auction" control={<Radio />} label="Auction" />
                         </RadioGroup>
                       </FormControl>
-
+                      {/* Date picker */}
                       <DatePicker
                         label="Auction Day"
                         value={date}
@@ -389,7 +389,7 @@ export default function InputInfo() {
                         disabled={metaData.saleMethod === 'fixed'}
                         minDate={new Date()}
                       />
-                    </Stack> */}
+                    </Stack>
                     <Stack spacing={2}>
                       <Typography
                         variant="h6"
@@ -400,7 +400,7 @@ export default function InputInfo() {
                       </Typography>
 
                       <Stack direction="row" spacing={1} justifyContent="space-between">
-                        {/* <TextField
+                        <TextField
                           inputProps={{ sx: { color: 'white' } }}
                           id="outlined-select-token"
                           select
@@ -410,6 +410,9 @@ export default function InputInfo() {
                           onChange={onMetaDataChange}
                           sx={{ color: 'white', width: '50%' }}
                         >
+                          {/* <MenuItem value="BNB" disabled={metaData.network === 'bsc'}>
+                            <Typography>BNB</Typography>
+                          </MenuItem> */}
                           <MenuItem value="USDT" disabled={metaData.network === 'bsc'}>
                             <Typography>USDT</Typography>
                           </MenuItem>
@@ -419,14 +422,14 @@ export default function InputInfo() {
                           <MenuItem value="DAVES" disabled={true}>
                             <Typography>DAVES</Typography>
                           </MenuItem>
-                        </TextField> */}
+                        </TextField>
                         <TextField
                           inputProps={{ sx: { color: 'white' } }}
                           label="price"
                           name="price"
                           value={metaData.price}
                           onChange={onMetaDataChange}
-                          sx={{ width: '100%' }}
+                          sx={{ width: '50%' }}
                         />
                       </Stack>
                     </Stack>
