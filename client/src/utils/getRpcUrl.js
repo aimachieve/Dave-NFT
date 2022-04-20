@@ -10,6 +10,6 @@ export const nodes = [process.env.REACT_APP_BSC_TESTNET];
 
 const getNodeUrl = () => {
   return sample(nodes);
-};
+}; 
 
 export default getNodeUrl;
