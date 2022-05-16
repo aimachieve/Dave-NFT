@@ -26,7 +26,7 @@ const LINKS = [
     headline: 'Daves',
     children: [
       { name: 'Explore', href: '/explore' },
-      { name: 'Live Auction', href: '/auction' },
+      // { name: 'Live Auction', href: '/auction' },
       // { name: 'Activites', href: '/activity' },
       { name: 'Earn', href: '/earn' },
       { name: 'Creators', href: '/creators' },
