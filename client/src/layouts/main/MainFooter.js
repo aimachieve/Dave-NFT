@@ -28,7 +28,7 @@ const LINKS = [
       { name: 'Explore', href: '/explore' },
       // { name: 'Live Auction', href: '/auction' },
       // { name: 'Activites', href: '/activity' },
-      { name: 'Earn', href: '/earn' },
+      // { name: 'Earn', href: '/earn' },
       { name: 'Creators', href: '/creators' },
     ]
   },

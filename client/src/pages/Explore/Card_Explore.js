@@ -16,6 +16,7 @@ export default function Card_Research({ tokenId }) {
   useEffect(() => {
     const init = async () => {
       const NFT = await NFTContract.getNFT(tokenId)
+      console.log("NFT=>", NFT)
       setNFT(NFT)
 
       fetch(NFT[1])

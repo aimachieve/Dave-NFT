@@ -36,7 +36,7 @@ export default function LandingPage() {
         {/* Best Creators & Sellers */}
         <LandingBestCS />
         {/* Live Auction */}
-        <LandingAuction />
+        {/* <LandingAuction /> */}
         {/* Latest Blogs 1/> */}
         <LandingBlogs1 />
         {/* Latest Blogs 2 */}

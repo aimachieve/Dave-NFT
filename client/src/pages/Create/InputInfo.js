@@ -282,12 +282,12 @@ export default function InputInfo() {
                           <Typography>Binance Smart Chain</Typography>
                         </Stack>
                       </MenuItem>
-                      <MenuItem value="eth">
+                      {/* <MenuItem value="eth">
                         <Stack direction={'row'} justifyContent="center" alignItems="center" spacing={2}>
                           <img src="/assets/create/eth-icon.png" alt="eth-icon" style={{ height: '20px', width: '20px' }} />
                           <Typography>Ethereum</Typography>
                         </Stack>
-                      </MenuItem>
+                      </MenuItem> */}
                     </TextField>
                     {/* Title */}
                     <TextField

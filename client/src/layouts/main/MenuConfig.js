@@ -19,11 +19,11 @@ const menuConfig = [
     path: '/explore',
     icon: <Icon icon={homeFill} {...ICON_SIZE} />
   },
-  {
-    title: 'Earn',
-    path: '/earn',
-    icon: <Icon icon={homeFill} {...ICON_SIZE} />
-  },
+  // {
+  //   title: 'Earn',
+  //   path: '/earn',
+  //   icon: <Icon icon={homeFill} {...ICON_SIZE} />
+  // },
   {
     title: 'Blog',
     path: '/blog',
